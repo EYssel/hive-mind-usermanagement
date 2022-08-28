@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "es2020",
     "module": "commonjs",
     "lib": [
-      "ES2022"
+      "es2020"
     ],
     "declaration": true,
     "strict": true,
@@ -21,9 +21,12 @@
     "strictPropertyInitialization": false,
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "outDir": "./build"
   },
   "exclude": [
+    "dist",
+    "build",
     "node_modules",
     "cdk.out"
   ]
